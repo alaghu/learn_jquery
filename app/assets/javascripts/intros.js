@@ -23,3 +23,6 @@ function addHighlightClass()  {
 // is passed as a parameter. This function is then executed. 
 
 $(document).ready(addHighlightClass);
+
+// I am purposely not making the above function (addHighlightClass) as an 
+// anonymous function for this iteraction. 
