@@ -20,6 +20,7 @@ $(document).ready(
         $('#selected-plays li:not(.horizontal)').addClass('sub-level');
         
         // Styling Links
+        
         // The most important aspect of these is the regular expression based
         // selector rules.Basically JQuery supports it. 
         // [] - Attribute Selector 
@@ -27,7 +28,7 @@ $(document).ready(
         // The jqapi
         // http://jqapi.com/#p=attribute-starts-with-selector
         // http://jqapi.com/#p=attribute-contains-selector
-        
+        //
         // researching regular expression
         // ^ - Starts with 
         // $ - Ends with 
@@ -41,6 +42,11 @@ $(document).ready(
         //a attribute's href starts with http and href contains heny
         $('a[href^="http"][href*="henry"]').addClass('henrylink')
         
+        // Styling Alternate rows
         
+        // Though the book mentions :nth-child() selector, I am going with ':odd'
+        // because I would identify each table uniquely.
+        $('tr:odd').addClass('alt');
+        $('td:contains("Henry")').addClass('highlight');
     }
 );
