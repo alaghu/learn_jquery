@@ -68,12 +68,12 @@ a {
   color: #00c;
 }
 a.mailto {
-  background: url(images/email.png) no-repeat 100% 2px;
+  background: url(image_path("email.png")) no-repeat 100% 2px;
   padding-right: 18px;
   color : white;
 }
 a.pdflink {
-  background: url(images/pdf.png) no-repeat 100% 0;
+  background: url(image_path("pdf.png")) no-repeat 100% 0;
   padding-right: 18px;
   color : green;
 }
@@ -83,7 +83,7 @@ a.henrylink {
   border: 1px solid #000;
 }
 a.external {
-  background: #fff url(images/external.png) no-repeat 100% 2px;
+  background: #fff url(image_path("external.png")) no-repeat 100% 2px;
   padding-right: 16px;
 }
 ul.tragedy {

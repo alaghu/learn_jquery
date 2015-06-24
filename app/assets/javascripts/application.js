@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+
+//  A's removing  require_tree due to controller specific stylesheet. 
+//  http://theflyingdeveloper.com/controller-specific-assets-with-rails-4/
+

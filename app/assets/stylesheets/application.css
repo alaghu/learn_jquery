@@ -10,6 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+# A's removing  require_tree due to controller specific stylesheet. 
+# http://theflyingdeveloper.com/controller-specific-assets-with-rails-4/
+
  *= require_self
  */

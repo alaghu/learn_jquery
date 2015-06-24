@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LearnJquery</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>Learn JQuery</title>
+  
+<!--  # A's adding this due to controller specific stylesheet. -->
+<!--# http://theflyingdeveloper.com/controller-specific-assets-with-rails-4/-->
+  <%= stylesheet_link_tag    'application',params[:controller], media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application',params[:controller],'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  
 </head>
 <body>
-
 <%= yield %>
 
 </body>
