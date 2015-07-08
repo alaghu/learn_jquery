@@ -14,4 +14,6 @@ Rails.application.config.assets.version = '1.0'
 
 #                                            %w is an array with space as de
 # limiter
- Rails.application.config.assets.precompile += %w( homes.css homes.js selector.css selector.js )
+ Rails.application.config.assets.precompile += %w( homes.css homes.js 
+ selector.css selector.js 
+ select_me.css select_me.js)

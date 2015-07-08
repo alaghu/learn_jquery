@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  
- 
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -12,8 +12,10 @@ Rails.application.routes.draw do
   
   # A's notes http verb is the method name which takes the string after host as
   # one one parameter and the controller name and action as the other parameter.
-  get 'selector/:id' , to: 'selector#index'
-  get 'selector', to: 'selector#index'
+  get 'selector/:id' , to: 'selector#index', as: 'selector'
+  get 'selector', to: 'selector#index', as: 'selectors'
+  
+  get 'select_me/index'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
