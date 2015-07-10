@@ -1,17 +1,24 @@
-
 <body>
-	<div class="container">
-	
-		<div class="heading-bar">
-			Me Learning JQuery
+
+
+	<div class="banner">
+		<p>Me Learning JQuery</p>
+	</div>
+
+	<div class="learning-list">
+		<div class="my-version">
+			<p>My Jquery</p>
 		</div>
-	
-		<div class="content-row">
-			<div class="content-box">My Jquery</div>
-		    <div class="content-box"><%= link_to 'select me', select_me_index_path %></div>
-	        <div class="content-box"><%= link_to 'selector', selector_path("1") %></div>
-	 	</div>
+		<div class="book-version">
+			<p>
+				<%=link_to 'Book', select_me_index_path %>
+			</p>
+		</div>
+		<div class="opal-version">
+			<p>
+				<%=link_to 'opal', selector_path( "1") %>
+			</p>
+		</div>
+	</div>
 
- 	</div>
 </body>
-
