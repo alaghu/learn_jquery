@@ -1,27 +1,36 @@
 <body>
 
-
 	<div class="banner">
 		<p>Me Learning JQuery</p>
 	</div>
-	
-	
-
-
-	<div class="learning-list">
+	<div class="learning-list-header">
+		<div class="book-version">
+			<p>Book</p>
+		</div>
 		<div class="my-version">
 			<p>My JQuery</p>
 		</div>
+		<div class="opal-version">
+			<p>Opal</p>
+		</div>
+	</div>
+	<div class="learning-list-rows" id="row-1">
 		<div class="book-version">
 			<p>
-				<%=link_to 'Book', select_me_index_path %>
+				<%=link_to 'A selction of books!', selector_path( "1") %>
+			</p>
+		</div>
+		<div class="my-version">
+			<p>
+				<%=link_to 'What about my selection?', select_me_index_path %>
 			</p>
 		</div>
 		<div class="opal-version">
 			<p>
-				<%=link_to 'opal', selector_path( "1") %>
+				<%=link_to 'I prefer the opal selection', select_me_index_path %>
 			</p>
 		</div>
+
 	</div>
 
 </body>
