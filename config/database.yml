@@ -17,12 +17,12 @@ default: &default
   password:
   host: localhost
 
-development:
-  adapter: mysql2
-  encoding: utf8
-  database: c9
-  username: <%=ENV['C9_USER']%>
-  host: <%=ENV['IP']%>
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  database: c9
+#  username: <%=ENV['C9_USER']%>
+#  host: <%=ENV['IP']%>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -30,6 +30,17 @@ development:
 test:
   <<: *default
   database: learn_jquery_test
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: learn_jquery_test_development
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
