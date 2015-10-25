@@ -63,12 +63,13 @@ body {
 
   // Child Class
   .book-version {
+    $violet-header : hsla(246, 68%, 66%, 1);
     float            : left;
     width            : 300px;
     height           : inherit;
 
     //fall back
-    background-color : hsla(246, 68%, 66%, 1);
+    background-color : $violet-header;
 
     a {
       text-decoration : none;
