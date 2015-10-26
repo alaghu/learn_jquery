@@ -1,0 +1,5 @@
+# This file overrides the default configurations of rubocop. For example, Method
+# length has been increased to 15 lines.
+
+MethodLength:
+  Max: 15
