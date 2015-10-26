@@ -2,8 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'home page' do
   it 'should have content from each line' do
-
-
     header = 'Me Learning JQuery'
     line_1 = 'Opal'
     line_2 = 'A selection of books!'
@@ -14,6 +12,5 @@ RSpec.describe 'home page' do
     all_the_contents.each do |content|
       expect(page).to have_content(content)
     end
-
   end
 end
