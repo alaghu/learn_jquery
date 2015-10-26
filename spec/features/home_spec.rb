@@ -1,11 +1,19 @@
 require 'rails_helper'
 
-RSpec.describe "home page"  do
-  it "displays the user's username after successful login" do
-
-    visit "/"
+RSpec.describe 'home page' do
+  it 'should have content from each line' do
 
 
-    expect(page).to have_content('Me Learning JQuery')
+    header = 'Me Learning JQuery'
+    line_1 = 'Opal'
+    line_2 = 'A selection of books!'
+    all_the_contents = [header, line_1, line_2]
+
+    visit '/'
+
+    all_the_contents.each do |content|
+      expect(page).to have_content(content)
+    end
+
   end
 end
