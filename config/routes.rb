@@ -1,28 +1,27 @@
 Rails.application.routes.draw do
-
-
-  # The priority is based upon order of creation: first created -> highest priority.
+  # The priority is based upon order of creation: first created
+  # -> highest priority.
   # See how all your routes lay out with "rake routes".
-
   # You can have the root of your site routed with "root"
   root 'homes#index'
-  
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  
+
   # A's notes http verb is the method name which takes the string after host as
   # one one parameter and the controller name and action as the other parameter.
-  get 'selector/:id' , to: 'selector#index', as: 'selector'
+  get 'selector/:id', to: 'selector#index', as: 'selector'
   get 'selector', to: 'selector#index', as: 'selectors'
-  
+
   get 'select_me/index'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
+  # Example resource route (maps HTTP verbs to controller actions
+  # automatically):
   #   resources :products
-  
+
   resources :homes, :intros
 
   # Example resource route with options:
