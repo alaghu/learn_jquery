@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'home page' do
+RSpec.describe 'Home page' do
   it 'should have content from each line' do
     header = 'Me Learning JQuery'
     line_1 = 'Opal'
