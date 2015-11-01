@@ -11,14 +11,12 @@ Rails.application.routes.draw do
   # A's notes http verb is the method name which takes the string after host as
   # one one parameter and the controller name and action as the other parameter.
   get 'selector/:id', to: 'selector#index', as: 'selector'
-  # get 'selector', to: 'selector#index', as: 'selectors'
   get 'select_me/index'
 
-
-
-  # get 'book', to: 'selector#index'
-  #get 'book/:chapter', to: 'selector#show', as: 'book'
+  # maps host/book/chapter_name to book controller's show method
   get 'book/:chapter', to: 'book#show', as: 'book'
+  get 'book', to: 'book#index'
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
