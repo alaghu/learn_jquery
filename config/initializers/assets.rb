@@ -18,8 +18,8 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w(
   homes.css
   homes.js
-  selector.css
-  selector.js
+  book.css
+  book.js
   select_me.css
   select_me.js
 )
