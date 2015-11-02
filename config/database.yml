@@ -28,16 +28,22 @@ default: &default
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter: mysql2
+  encoding: utf8
   database: learn_jquery_test
+  pool: 5
+  username: learn_jquery
+  password: learn_jquery
+  socket: /tmp/mysql.sock
+
 
 development:
   adapter: mysql2
   encoding: utf8
-  database: learn_jquery_test_development
+  database: learn_jquery_development
   pool: 5
-  username: root
-  password:
+  username: learn_jquery
+  password: learn_jquery
   socket: /tmp/mysql.sock
 
 
