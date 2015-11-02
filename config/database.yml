@@ -32,8 +32,8 @@ test:
   encoding: utf8
   database: learn_jquery_test
   pool: 5
-  username: learn_jquery
-  password: learn_jquery
+  username: root
+  password:
   socket: /tmp/mysql.sock
 
 
@@ -42,8 +42,8 @@ development:
   encoding: utf8
   database: learn_jquery_development
   pool: 5
-  username: learn_jquery
-  password: learn_jquery
+  username: root
+  password:
   socket: /tmp/mysql.sock
 
 
