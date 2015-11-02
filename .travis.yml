@@ -2,7 +2,15 @@ language: ruby
 rvm:
  - "2.2.1"
 
+# http://docs.travis-ci.com/user/database-setup/#MySQL
 services:
   - mysql
+
+before_script:
+  - mysql -e 'create database learn_jquery_test;'
+
+before_install:
+  - mysql -e "create database IF NOT EXISTS test;" -uroot
+
 # uncomment this line if your project needs to run something other than `rake`:
 script: bundle exec rspec spec
