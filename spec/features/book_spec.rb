@@ -8,6 +8,16 @@ describe 'Book page, which does not exist' do
   end
 end
 
+# Intro
+describe 'book intro page' do
+  it 'should have content about Looking-Glass' do
+    visit '/book/intro'
+
+    expect(page).to have_content 'Through the Looking-Glass'
+  end
+end
+
+# Selector
 describe 'Book selector page' do
   it 'should have content about shakespear' do
     visit '/book/selector'

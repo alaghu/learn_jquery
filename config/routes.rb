@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   # therefore, the show.html view with any_chapter name as params.
   # finally a helper method with book_path is created. This method is also
   # called named routes
+
+  get 'book/intro', to: 'book#intro', as: 'book_intro'
   get 'book/:chapter', to: 'book#show', as: 'book'
+
+
 
   get 'book', to: 'book#index'
 

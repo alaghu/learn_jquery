@@ -7,4 +7,8 @@ class BookController < ApplicationController
   def show
     @chapter = params[:chapter]
   end
+
+  def intro
+    @chapter = params[:chapter]
+  end
 end
