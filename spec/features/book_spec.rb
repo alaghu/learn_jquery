@@ -15,6 +15,13 @@ describe 'book intro page' do
 
     expect(page).to have_content 'Through the Looking-Glass'
   end
+
+  it 'should be accessible from home page' do
+    visit '/'
+    click_on 'Can you book my intro?'
+
+    expect(page).to have_content 'Through the Looking-Glass'
+  end
 end
 
 # Selector
@@ -26,7 +33,7 @@ describe 'Book selector page' do
     # TODO: Find a specific css property to differentiate with my selector css.
   end
 
-  it 'should accessible from home page' do
+  it 'should be accessible from home page' do
     visit '/'
     click_on 'A selection of books!'
 
