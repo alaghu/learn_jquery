@@ -1,70 +1,34 @@
 Rails.application.routes.draw do
+
+  # Root
   root 'homes#index'
 
-  # books related routing
-  # maps host/book/any_chapter_name to book controller's show method
-  # therefore, the show.html view with any_chapter name as params.
-  # finally a helper method with book_path is created. This method is also
-  # called named routes
+  # A's notes.
+  # 1. This is the bible : http://guides.rubyonrails.org/routing.html
+  #
+  # 2. General syntax
+  # Method name = get - verb of restful
+  # Param1 'matches with url
+  # Param2 to: takes the arguments'controller_name#action_name'.
+  # param3 as: makes it named routes
+  #
+  # 3. Always - rake routes.
 
-  get 'book/intro', to: 'book#intro', as: 'book_intro'
-  get 'book/:chapter', to: 'book#show', as: 'book'
 
 
-
+  # Books related routing
+  # the base path alone goes to index, where it is redirected.
+  # TODO: redirect it here itself?
   get 'book', to: 'book#index'
 
+  # When only the path is given the corresponding names book_intro_path, etc
+  get 'book/intro'
+  get 'book/selector'
+
   # Select me related routes
-  # A's notes http verb is the method name which takes the string after host as
-  # one one parameter and the controller name and action as the other parameter.
   get 'select_me/index'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions
-  # automatically):
-  #   resources :products
-
+  # Homes related routes
   resources :homes
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
 end
