@@ -1,10 +1,10 @@
 # Inheriting from Application Controller
 class BookController < ApplicationController
   def index
-    redirect_to book_path(1)
+    redirect_to book_selector_path
   end
 
-  def show
+  def selector
     @chapter = params[:chapter]
   end
 
