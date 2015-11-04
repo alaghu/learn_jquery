@@ -2,6 +2,7 @@ language: ruby
 rvm:
  - "2.2.1"
 
+# After performing these steps , the build is passing in Travis
 # http://docs.travis-ci.com/user/database-setup/#MySQL
 services:
   - mysql
