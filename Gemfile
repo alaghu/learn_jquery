@@ -54,3 +54,5 @@ gem 'rspec-rails', '~>3.0'
 gem 'capybara'
 
 gem 'coveralls', require: false
+
+gem "codeclimate-test-reporter", group: :test, require: nil

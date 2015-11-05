@@ -1,9 +1,22 @@
+{<img src="https://travis-ci.org/alaghu/learn_jquery.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/alaghu/learn_jquery]
+
+{<img src="https://codeclimate.com/github/alaghu/learn_jquery/badges/gpa.svg" />}[https://codeclimate.com/github/alaghu/learn_jquery]
+
+
+{<img src="https://codeclimate.com/github/alaghu/learn_jquery/badges/coverage.svg" />}[https://codeclimate.com/github/alaghu/learn_jquery/coverage]
+
+
+
+
 
 Starting up  the app in C9.io
+------------------------------
 
 Start My SQL
 $ mysql-ctl cli
 
 Start Rails
 $ rails s -b $IP -p $PORT
+
+
 
