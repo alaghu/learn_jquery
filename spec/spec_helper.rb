@@ -3,7 +3,7 @@
 
 # Refer to https://codeclimate.com/repos/563b63326956804cc10010ae/coverage_setup
 # TODO: setup CI with code coverage
-require 'codeclimate-test-reporter'
+require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
 
 # https://coveralls.io/github/alaghu/learn_jquery
