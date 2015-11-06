@@ -19,6 +19,7 @@ script: bundle exec rspec spec
 
 # http://docs.travis-ci.com/user/code-climate/
 # and https://codeclimate.com/repos/563b63326956804cc10010ae/coverage_setup
+
 addons:
-  code_climate:
-    repo_token: bd1ac43f2e67a4c5e8277958cc5a21c34bcc4482cdf2c77166e8a674fa83349e
+    code_climate:
+        repo_token: bd1ac43f2e67a4c5e8277958cc5a21c34bcc4482cdf2c77166e8a674fa83349e
