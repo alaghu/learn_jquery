@@ -14,6 +14,8 @@
 !/log/.keep
 /.idea/.rakeTasks
 /tmp
+/coverage/
+
 
 
 /.idea/*

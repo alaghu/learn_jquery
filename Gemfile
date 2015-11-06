@@ -53,10 +53,6 @@ gem 'rspec-rails', '~>3.0'
 
 gem 'capybara'
 
-gem 'coveralls', require: false
-
-gem "codeclimate-test-reporter", group: :test, require: nil
-
 # https://coveralls.io/github/alaghu/learn_jquery
 gem 'coveralls', require: false
 
