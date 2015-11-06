@@ -1,12 +1,7 @@
-# I have added two online code coverage tool. 1. Code climate  2. Coeveralls
-# Depending on the usability will decide later
+# I have added  Coveralls code coverage only as code climate looks at only
+# master branch
 
-# Refer to https://codeclimate.com/repos/563b63326956804cc10010ae/coverage_setup
-# TODO: setup CI with code coverage
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
-
-# # https://coveralls.io/github/alaghu/learn_jquery
+# https://coveralls.io/github/alaghu/learn_jquery
 require 'coveralls'
 Coveralls.wear!
 
