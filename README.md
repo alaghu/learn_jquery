@@ -2,6 +2,7 @@
 
 
 | Tool for... | Status |
+| ------------- |:-------------:|
 | Travis for Build | [![Build Status](https://travis-ci.org/alaghu/learn_jquery.svg?branch=master)](https://travis-ci.org/alaghu/learn_jquery) |
 
 | Code Climate for analysis | [![Code Climate](https://codeclimate.com/github/alaghu/learn_jquery/badges/gpa.svg)](https://codeclimate.com/github/alaghu/learn_jquery) |
