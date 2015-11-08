@@ -7,9 +7,13 @@ ruby '2.2.3'
 gem 'rails', '4.2.1'
 
 # Needed for heroku
-gem 'rails_12factor'
-
-gem 'pg' , group: :production
+# resolves issue #3 https://github.com/alaghu/learn_jquery/issues/3
+# Rails_12factor was outputting log in rspec because of rails_12factor I think
+# Therefore, moved it into prod only. Now Rspec is back to clearn.
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
