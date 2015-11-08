@@ -12,11 +12,10 @@
 
 Start My SQL
 
->$ mysql-ctl cli
-
+> $ mysql-ctl cli
+  
 Start Rails
 
 > $ rails s -b $IP -p $PORT
 
-
-
+###Deployed @ [Heroku](http://me-learning-jquery.herokuapp.com)
