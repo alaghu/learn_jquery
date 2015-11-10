@@ -17,9 +17,9 @@ Rails.application.routes.draw do
 
 
   # Books related routing
-  # the base path alone goes to index, where it is redirected.
-  # TODO: redirect it here itself?
-  get 'book', to: 'book#index'
+  # the base path alone is redirected to selector
+  # http://guides.rubyonrails.org/routing.html#redirection
+  get 'book', to: redirect('book/selector')
 
   # When only the path is given the corresponding names book_intro_path, etc
   get 'book/intro'
