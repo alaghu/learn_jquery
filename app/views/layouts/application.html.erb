@@ -2,39 +2,39 @@
 <html>
 <head>
   <title>Me Learning JQuery</title>
-  
-<!--  # A's adding this due to controller specific stylesheet. -->
-<!--# http://theflyingdeveloper.com/controller-specific-assets-with-rails-4/-->
-  <%= stylesheet_link_tag    'application',params[:controller], media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application',params[:controller],'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  
-<!--Refer to the Readme in images/Favicon for more details-->
-<!--Apple Related Favicons-->
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<%= image_path("Favicon/apple-touch-icon-57x57.png") %>" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="<%= image_path("Favicon/apple-touch-icon-60x60.png") %>" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= image_path("Favicon/apple-touch-icon-72x72.png") %>" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="<%= image_path("Favicon/apple-touch-icon-76x76.png") %>" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= image_path("Favicon/apple-touch-icon-114x114.png") %>" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<%= image_path("Favicon/apple-touch-icon-120x120.png") %>" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%= image_path("Favicon/apple-touch-icon-144x144.png") %>" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<%= image_path("Favicon/apple-touch-icon-152x152.png") %>" />
- 
-<!--Other Browser Related Favicons-->
-<link rel="icon" type="image/png" sizes="16x16" href="<%= image_path("Favicon/favicon-16x16.png") %>" />
-<link rel="icon" type="image/png" sizes="32x32" href="<%= image_path("Favicon/favicon-32x32.png") %>" />
-<link rel="icon" type="image/png" sizes="96x96" href="<%= image_path("Favicon/favicon-96x96.png") %>" />
-<link rel="icon" type="image/png" sizes="128x128" href="<%= image_path("Favicon/favicon-128.png") %>" />
-<link rel="icon" type="image/png" sizes="196x196" href="<%= image_path("Favicon/favicon-196x196.png") %>" />
 
-<!--Microsoft Related Favicons-->
+  <!--  # A's adding this due to controller specific stylesheet. -->
+  <!--# http://theflyingdeveloper.com/controller-specific-assets-with-rails-4/-->
+  <%= stylesheet_link_tag 'application', params[:controller], media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', params[:controller], 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!--Refer to the Readme in images/Favicon for more details-->
+  <!--Apple Related Favicons-->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<%= image_path("Favicon/apple-touch-icon-57x57.png") %>"/>
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="<%= image_path("Favicon/apple-touch-icon-60x60.png") %>"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= image_path("Favicon/apple-touch-icon-72x72.png") %>"/>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="<%= image_path("Favicon/apple-touch-icon-76x76.png") %>"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= image_path("Favicon/apple-touch-icon-114x114.png") %>"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<%= image_path("Favicon/apple-touch-icon-120x120.png") %>"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%= image_path("Favicon/apple-touch-icon-144x144.png") %>"/>
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<%= image_path("Favicon/apple-touch-icon-152x152.png") %>"/>
+
+  <!--Other Browser Related Favicons-->
+<link rel="icon" type="image/png" sizes="16x16" href="<%= image_path("Favicon/favicon-16x16.png") %>"/>
+<link rel="icon" type="image/png" sizes="32x32" href="<%= image_path("Favicon/favicon-32x32.png") %>"/>
+<link rel="icon" type="image/png" sizes="96x96" href="<%= image_path("Favicon/favicon-96x96.png") %>"/>
+<link rel="icon" type="image/png" sizes="128x128" href="<%= image_path("Favicon/favicon-128.png") %>"/>
+<link rel="icon" type="image/png" sizes="196x196" href="<%= image_path("Favicon/favicon-196x196.png") %>"/>
+
+  <!--Microsoft Related Favicons-->
 <meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-square70x70logo" content="<%= image_path("Favicon/mstile-70x70.png") %>" />
-<meta name="msapplication-TileImage" content="<%= image_path("Favicon/mstile-144x144.png") %>" />
-<meta name="msapplication-square150x150logo" content="<%= image_path("Favicon/mstile-150x150.png") %>" />
-<meta name="msapplication-wide310x150logo" content="<%= image_path("Favicon/mstile-310x150.png") %>" />
-<meta name="msapplication-square310x310logo" content="<%= image_path("Favicon/mstile-310x310.png") %>" />
+<meta name="msapplication-TileColor" content="#FFFFFF"/>
+<meta name="msapplication-square70x70logo" content="<%= image_path("Favicon/mstile-70x70.png") %>"/>
+<meta name="msapplication-TileImage" content="<%= image_path("Favicon/mstile-144x144.png") %>"/>
+<meta name="msapplication-square150x150logo" content="<%= image_path("Favicon/mstile-150x150.png") %>"/>
+<meta name="msapplication-wide310x150logo" content="<%= image_path("Favicon/mstile-310x150.png") %>"/>
+<meta name="msapplication-square310x310logo" content="<%= image_path("Favicon/mstile-310x310.png") %>"/>
 
   
 </head>
