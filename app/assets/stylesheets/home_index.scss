@@ -5,9 +5,7 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 // Since we have used the bootstrap gem, using the normalize as part of it.
 // Normalize should reset many values to keep it consistent across browsers.
-@import 'bootstrap/normalize';
-// All the font definitions will be loaded from this file.
-@import 'fonts';
+
 
 body {
   //setting the back ground color
@@ -58,7 +56,7 @@ body {
   // For horizontally centering it
   margin      : 0 auto;
   text-align  : center;
-  font-family : VarelaRound-Regular;
+  font-family : 'VarelaRound-Regular';
   font-size   : 36px;
 
   // Child Class
@@ -146,7 +144,7 @@ body {
   // For horizontally centering it
   margin      : 0 auto;
   text-align  : center;
-  font-family : VarelaRound-Regular;
+  font-family : 'VarelaRound-Regular';
   font-size   : 20px;
 
   a {
