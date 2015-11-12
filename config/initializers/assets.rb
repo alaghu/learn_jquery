@@ -16,10 +16,12 @@ Rails.application.config.assets.version = '1.0'
 #                                            %w is an array with space as de
 # limiter
 Rails.application.config.assets.precompile += %w(
-  homes.css
-  homes.js
-  book.css
-  book.js
+  home_index.css
+  home_index.js
+  book_intro.css
+  book_intro.js
+  book_selector.css
+  book_selector.js
   select_me.css
   select_me.js
 )

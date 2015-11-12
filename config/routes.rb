@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # Root
-  root 'homes#index'
+  root 'home#index'
 
   # A's notes.
   # 1. This is the bible : http://guides.rubyonrails.org/routing.html
@@ -29,6 +29,6 @@ Rails.application.routes.draw do
   get 'select_me/index'
 
   # Homes related routes
-  resources :homes
+  resources :home
 
 end

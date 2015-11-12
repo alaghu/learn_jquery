@@ -1,0 +1,147 @@
+// Place all the styles related to the Selector controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/***************************************
+   Default Styles
+************************************** */
+
+html, body {
+  margin  : 0;
+  padding : 0;
+  }
+
+body {
+  color      : #000;
+  background : #fff;
+  font       : 62.5% Verdana, Helvetica, Arial, sans-serif;
+  }
+
+#container {
+  margin    : 10px 2em;
+  font-size : 1.2em;
+  }
+
+h1 {
+  margin-bottom : 0;
+  font-size     : 2.5em;
+  }
+
+h2 {
+  margin-bottom : .5em;
+  font-size     : 1.3em;
+  }
+
+h3 {
+  margin-bottom : 0;
+  font-size     : 1.1em;
+  }
+
+code {
+  font-size : 1.2em;
+  }
+
+a {
+  color : #06581f;
+  }
+
+/***************************************
+   Chapter Styles
+************************************** */
+
+h2 {
+  clear : left;
+  }
+
+li {
+  padding : 0 3px;
+  color   : #000;
+  }
+
+.horizontal {
+  float      : left;
+  margin     : 10px;
+  list-style : none;
+  }
+
+.sub-level {
+  background : #ccc;
+  }
+
+a {
+  color : #00c;
+  }
+
+a.mailto {
+  padding-right : 18px;
+  color         : white;
+  background    : url(image_path("email.png")) no-repeat 100% 2px;
+  }
+
+a.pdflink {
+  padding-right : 18px;
+  color         : green;
+  background    : url(image_path("pdf.png")) no-repeat 100% 0;
+  }
+
+a.henrylink {
+  padding          : 2px;
+  border           : 1px solid #000;
+  background-color : #fff;
+  }
+
+a.external {
+  padding-right : 16px;
+  background    : #fff url(image_path("external.png")) no-repeat 100% 2px;
+  }
+
+ul.tragedy {
+  border : 1px solid #999;
+  }
+
+li.afterlink {
+  border-right : 4px solid #090;
+  }
+
+table {
+  border-collapse : collapse;
+  }
+
+th, td {
+  padding    : 2px 4px;
+  text-align : left;
+  }
+
+.table-heading {
+  color            : #fff;
+  background-color : #000;
+  }
+
+.alt {
+  background-color : #ccc;
+  }
+
+.highlight {
+  font-weight : bold;
+  font-style  : italic;
+  }
+
+.italic {
+  font-style : italic;
+  }
+
+.bold {
+  font-weight : bold;
+  }
+
+.special {
+  color : #f00;
+  }
+
+.year {
+  padding          : 0 10px;
+  text-align       : center;
+  color            : #fff;
+  background-color : #888;
+  }
+

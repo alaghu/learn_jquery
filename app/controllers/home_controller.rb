@@ -1,5 +1,5 @@
 # Inheriting from Application Controller
-class HomesController < ApplicationController
+class HomeController < ApplicationController
   def index
   end
 end
