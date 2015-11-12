@@ -1,3 +1,8 @@
+# I have purposely hard coded every version. Till there is a specific need
+# to update, please ensure you do not >bundle update. Also, uptake one new
+# version of a gem after the other. Ofcourse run rspec and rubocop after each
+# increment
+
 source 'https://rubygems.org'
 
 # Needed for heroku
@@ -7,73 +12,64 @@ ruby '2.2.3'
 gem 'rails', '4.2.1'
 
 # Needed for heroku
-# resolves issue #3 https://github.com/alaghu/learn_jquery/issues/3
-# Rails_12factor was outputting log in rspec because of rails_12factor I think
-# Therefore, moved it into prod only. Now Rspec is back to clearn.
 group :production do
-  gem 'rails_12factor'
-  gem 'pg'
+  # resolves issue #3 https://github.com/alaghu/learn_jquery/issues/3
+  # Rails_12factor was outputting log in rspec because of rails_12factor I think
+  # Therefore, moved it into prod only. Now Rspec is back to clean.
+  gem 'rails_12factor', '0.0.3'
+
+  gem 'pg', '0.18.3'
 end
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
-
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. R
-# ead more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
-
   # Use mysql as the database for Active Record
-  gem 'mysql2'
+  gem 'mysql2', '0.3.18'
 
   # Call 'byebug' anywhere in the code to stop execution and get a
   # debugger console
-  # gem 'byebug'
+  gem 'byebug', '8.1.0'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '2.1.2'
 
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '1.3.6'
 end
 
-gem 'rubocop'
+group :doc do
+  gem 'sdoc', '0.4.1'
+end
 
-gem 'bootstrap-sass', '~> 3.3.5'
+# Test and maintenance related
+gem 'rubocop', '0.34.2'
 
-gem 'rspec-rails', '~>3.0'
+gem 'bootstrap-sass', '3.3.5.1'
 
-gem 'capybara'
+gem 'rspec-rails', '3.3.3'
+
+gem 'capybara', '2.5.0'
 
 # https://coveralls.io/github/alaghu/learn_jquery
-gem 'coveralls', require: false
+gem 'coveralls', '0.8.3', require: false
 
+# CSS and Javascript related
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '5.0.3'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '2.7.1'
+
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '4.1.0'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '4.0.5'
+
+# Turbolinks makes following links in your web application faster. R
+# ead more: https://github.com/rails/turbolinks
+gem 'turbolinks', '2.5.3'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '2.2.16'
