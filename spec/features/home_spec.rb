@@ -14,10 +14,10 @@ RSpec.describe 'Home page' do
     end
   end
 
-  it 'should not have JavaScript errors', js: true do
-    visit(root_path)
-    expect(page).to_not have_errors
-  end
+  # it 'should not have JavaScript errors', js: true do
+  #   visit(root_path)
+  #   expect(page).to_not have_errors
+  # end
 end
 
 # `failure_message_for_should_not` is deprecated. Use
