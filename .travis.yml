@@ -9,6 +9,7 @@ services:
 
 before_script:
   - mysql -e 'create database learn_jquery_test;'
+
   # https://github.com/travis-ci/travis-ci/issues/2190
   # http://docs.travis-ci.com/user/gui-and-headless-browsers
   # /#Using-xvfb-to-Run-Tests-That-Require-a-GUI
