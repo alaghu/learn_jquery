@@ -25,44 +25,40 @@ group :development, :test do
   # Use mysql as the database for Active Record
   gem 'mysql2', '0.3.18'
 
-  # Call 'byebug' anywhere in the code to stop execution and get a
-  # debugger console
-  gem 'byebug', '8.1.0'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '2.1.2'
-
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
   gem 'spring', '1.3.6'
-end
 
-group :doc do
-  gem 'sdoc', '0.4.1'
+  # This is the rspec testing framework which provides a expressive
+  # way to write tests.
+  gem 'rspec-rails', '3.3.3'
+
+  # My understanding is that Capybara makes it possible to test the app
+  # as seen through a browser. ie - also test the jsavascript interaction
+  gem 'capybara', '2.5.0'
+
+  # Capybara can invoke the app through several dirvers. In our case we will
+  # use webkit, which is the engine behing chrome and safari. This will call
+  # the engine without opening a browser.
+  gem 'capybara-webkit', '1.7.1'
 end
 
 # Test and maintenance related
 gem 'rubocop', '0.34.2'
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '5.0.3'
+
+# Bootstrap css gemed
 gem 'bootstrap-sass', '3.3.5.1'
-
-gem 'rspec-rails', '3.3.3'
-
-gem 'capybara', '2.5.0'
 
 # https://coveralls.io/github/alaghu/learn_jquery
 gem 'coveralls', '0.8.3', require: false
 
-# CSS and Javascript related
-
-# Use SCSS for stylesheets
-gem 'sass-rails', '5.0.3'
-
+# Javascript related
+# ------------------
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.7.1'
-
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.0.5'
@@ -71,5 +67,18 @@ gem 'jquery-rails', '4.0.5'
 # ead more: https://github.com/rails/turbolinks
 gem 'turbolinks', '2.5.3'
 
+# -------- Commenting all the unused (by me) gems for now.
+# Use CoffeeScript for .coffee assets and views
+# gem 'coffee-rails', '4.1.0'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '2.2.16'
+# gem 'jbuilder', '2.2.16'
+
+# group :development, :test do
+# # Call 'byebug' anywhere in the code to stop execution and get a
+# # debugger console
+# #gem 'byebug', '8.1.0'
+#
+# # Access an IRB console on exception pages or by using <%= console %> in views
+# # gem 'web-console', '2.1.2'
+# end

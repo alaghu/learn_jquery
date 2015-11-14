@@ -22,6 +22,13 @@ describe 'book intro page' do
 
     expect(page).to have_content 'Through the Looking-Glass'
   end
+
+  it 'should not have JavaScript errors', js: true do
+    visit '/'
+    click_on 'Can you book my intro?'
+
+    expect(page).to_not have_errors
+  end
 end
 
 # Selector
@@ -38,5 +45,12 @@ describe 'Book selector page' do
     click_on 'A selection of books!'
 
     expect(page).to have_content 'Selected Shakespeare Plays'
+  end
+
+  it 'should not have JavaScript errors', js: true do
+    visit '/'
+    click_on 'A selection of books!'
+
+    expect(page).to_not have_errors
   end
 end

@@ -1,3 +1,8 @@
+# Need it for webkit driver
+require 'capybara/rspec'
+require 'capybara/webkit/matchers'
+Capybara.javascript_driver = :webkit
+
 # I have added  Coveralls code coverage only as code climate looks at only
 # master branch
 
