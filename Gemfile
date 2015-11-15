@@ -33,13 +33,13 @@ group :development, :test do
   # way to write tests.
   gem 'rspec-rails', '3.3.3'
 
-  # My understanding is that Capybara makes it possible to test the app
-  # as seen through a browser. ie - also test the jsavascript interaction
+  # Capybara provides DSL for browser based testing. Thus providing commands
+  # like click , visit, etc. Easy to understand actions as users would navidate.
   gem 'capybara', '2.5.0'
 
   # Capybara can invoke the app through several dirvers. In our case we will
-  # use webkit, which is the engine behing chrome and safari. This will call
-  # the engine without opening a browser.
+  # use webkit, which is the engine behind chrome and safari. This will call
+  # the engine without opening a browser(headless).
   gem 'capybara-webkit', '1.7.1'
 end
 
@@ -66,19 +66,3 @@ gem 'jquery-rails', '4.0.5'
 # Turbolinks makes following links in your web application faster. R
 # ead more: https://github.com/rails/turbolinks
 gem 'turbolinks', '2.5.3'
-
-# -------- Commenting all the unused (by me) gems for now.
-# Use CoffeeScript for .coffee assets and views
-# gem 'coffee-rails', '4.1.0'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '2.2.16'
-
-# group :development, :test do
-# # Call 'byebug' anywhere in the code to stop execution and get a
-# # debugger console
-# #gem 'byebug', '8.1.0'
-#
-# # Access an IRB console on exception pages or by using <%= console %> in views
-# # gem 'web-console', '2.1.2'
-# end
