@@ -6,7 +6,6 @@
 // Since we have used the bootstrap gem, using the normalize as part of it.
 // Normalize should reset many values to keep it consistent across browsers.
 
-
 body {
   //setting the back ground color
   background-color : #b3b3b3;
@@ -17,7 +16,7 @@ body {
 //The banner
 .banner {
   // dimensions
-  width      : 560px;
+  min-width  : 560px;
   height     : 200px;
 
   // For horizontally centering it
@@ -56,6 +55,7 @@ body {
   // For horizontally centering it
   margin      : 0 auto;
   text-align  : center;
+
   font-family : 'VarelaRound-Regular';
   font-size   : 36px;
 
@@ -63,6 +63,7 @@ body {
   .book-version {
     $violet-header : hsla(246, 68%, 66%, 1);
     float            : left;
+
     width            : 300px;
     height           : inherit;
 
@@ -71,6 +72,7 @@ body {
 
     a {
       text-decoration : none;
+
       color           : #d0d8e7;
       }
     p {
@@ -111,6 +113,7 @@ body {
   // Child Class
   .opal-version {
     float            : right;
+
     width            : 300px;
     height           : inherit;
 
@@ -120,6 +123,7 @@ body {
     //background-color: #406BEC;
     a {
       text-decoration : none;
+
       color           : #fffe00;
       }
     p {
@@ -144,6 +148,7 @@ body {
   // For horizontally centering it
   margin      : 0 auto;
   text-align  : center;
+
   font-family : 'VarelaRound-Regular';
   font-size   : 20px;
 
@@ -154,15 +159,15 @@ body {
   // Child class
   .book-version {
     float            : left;
+
     width            : 300px;
     height           : inherit;
 
     //fall back
     background-color : hsla(240, 54%, 62%, 0.67);
 
-
     a {
-      color           : #d0d8e7;
+      color : #d0d8e7;
       }
     p {
       position          : relative;
@@ -188,7 +193,7 @@ body {
     background-color : hsla(166, 63%, 51%, 0.67);
 
     a {
-      color           : #d0d8e7;
+      color : #d0d8e7;
       }
     p {
       position          : relative;
@@ -205,6 +210,7 @@ body {
   // Child Class
   .opal-version {
     float            : right;
+
     width            : 300px;
     height           : inherit;
 
@@ -212,7 +218,7 @@ body {
     background-color : hsla(220, 62%, 53%, 0.68);
 
     a {
-      color           : #fffe00;
+      color : #fffe00;
       }
     p {
       position          : relative;
