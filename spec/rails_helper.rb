@@ -10,7 +10,10 @@ require 'capybara/rails'
 # Need it for webkit driver
 require 'capybara/rspec'
 require 'capybara/webkit/matchers'
-Capybara.javascript_driver = :webkit
+
+# trying this as mentioned in
+# https://github.com/thoughtbot/capybara-webkit/issues/623
+Capybara.javascript_driver = :webkit_debug
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
