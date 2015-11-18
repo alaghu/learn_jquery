@@ -41,6 +41,13 @@ group :development, :test do
   # use webkit, which is the engine behind chrome and safari. This will call
   # the engine without opening a browser(headless).
   gem 'capybara-webkit', '1.7.1'
+
+  # https://www.pullreview.com/settings/repositories/54091/
+  # how_to_enable_coverage
+  gem 'pullreview-coverage', '0.0.5', require: false
+
+  # https://coveralls.io/github/alaghu/learn_jquery
+  gem 'coveralls', '0.8.3', require: false
 end
 
 # Test and maintenance related
@@ -51,9 +58,6 @@ gem 'sass-rails', '5.0.3'
 
 # Bootstrap css gemed
 gem 'bootstrap-sass', '3.3.5.1'
-
-# https://coveralls.io/github/alaghu/learn_jquery
-gem 'coveralls', '0.8.3', require: false
 
 # Javascript related
 # ------------------
