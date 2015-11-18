@@ -4,8 +4,8 @@
 # master branch
 
 # https://coveralls.io/github/alaghu/learn_jquery
-require 'coveralls'
-Coveralls.wear!
+# require 'coveralls'
+# Coveralls.wear!
 
 # Trying out pullreview
 require 'pullreview/coverage_reporter'
