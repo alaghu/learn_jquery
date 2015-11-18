@@ -47,6 +47,10 @@ group :development, :test do
   # Code coverage by codeclimate
   gem "codeclimate-test-reporter", require: nil
 
+  # https://www.pullreview.com/settings/repositories/54091/
+  # how_to_enable_coverage
+  gem 'pullreview-coverage', '0.0.5', require: false
+
   # https://coveralls.io/github/alaghu/learn_jquery
   gem 'coveralls', '0.8.3', require: false
 end
