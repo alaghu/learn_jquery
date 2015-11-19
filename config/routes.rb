@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'routing_errors/page_not_found'
+
+  get 'routing_errors/internal_server_error'
+
   # Root
   root 'home#index'
 

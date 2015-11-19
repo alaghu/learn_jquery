@@ -41,6 +41,9 @@ group :development, :test do
   # use webkit, which is the engine behind chrome and safari. This will call
   # the engine without opening a browser(headless).
   gem 'capybara-webkit', '1.7.1'
+
+  # a better
+  gem 'pry-rails', '0.3.2'
 end
 
 # Test and maintenance related

@@ -29,5 +29,13 @@ module LearnJquery
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # From https://mattbrictson.com/dynamic-rails-error-
+    # pages#1-generate-an-errors-controller-and-views
+    #
+    # This tells Rails to serve error pages from the Rails app itself
+    # (i.e. the routes we just set up),
+    # rather than using static error pages in public/.
+    config.exceptions_app = self.routes
   end
 end
