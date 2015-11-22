@@ -1,13 +1,6 @@
-
-/*
-# A's removing  require_tree due to controller specific stylesheet.
-# http://theflyingdeveloper.com/controller-specific-assets-with-rails-4/
-
- *= require_self
- */
-/*Importing-------------------------------------------*/
-/*importing bootstap/normalize from application.scss */
-@import 'bootstrap/normalize';
-/*Importing-------------------------------------------*/
-/*importing fonts from application */
-@import 'fonts';
+/*Requiring-------------------------------------------*/
+/*Requiring bootstap/normalize from application.scss */
+//=require bootstrap/_normalize
+/*Requiring-------------------------------------------*/
+/*Requiring fonts from application */
+//= require fonts

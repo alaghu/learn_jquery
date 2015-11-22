@@ -24,4 +24,8 @@ Rails.application.config.assets.precompile += %w(
   book_selector.js
   select_me.css
   select_me.js
+  routing_errors_page_not_found.css
+  routing_errors_page_not_found.js
+  routing_errors_internal_server_error.css
+  routing_errors_internal_server_error.js
 )

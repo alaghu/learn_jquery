@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   # 3. Always - rake routes.
 
 
-
   # Books related routing
   # the base path alone is redirected to selector
   # http://guides.rubyonrails.org/routing.html#redirection
@@ -31,4 +30,8 @@ Rails.application.routes.draw do
   # Homes related routes
   resources :home
 
+  # Error condition
+  # Implemented as detailed https://mattbrictson.com/dynamic-rails-error-pages
+  get '/404', to: 'routing_errors#page_not_found'
+  get '/500', to: 'routing_errors#internal_server_error'
 end

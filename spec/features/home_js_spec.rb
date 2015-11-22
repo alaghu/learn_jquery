@@ -1,17 +1,12 @@
 require 'rails_helper'
 
+# Due to issue#14 (https://github.com/alaghu/learn_jquery/issues/14)
+# refactored all the js related cases to a separate file.
 RSpec.describe 'Home page' do
-  it 'should have content from each line' do
-    header = 'Me Learning JQuery'
-    line_1 = 'Opal'
-    line_2 = 'A selection of books!'
-    all_the_contents = [header, line_1, line_2]
 
-    visit '/'
-
-    all_the_contents.each do |content|
-      expect(page).to have_content(content)
-    end
+  it 'should not have JavaScript errors', js: true do
+    visit(root_path)
+    expect(page).to_not have_errors
   end
 end
 

@@ -29,5 +29,15 @@ module LearnJquery
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # From https://mattbrictson.com/dynamic-rails-error-
+    # pages#1-generate-an-errors-controller-and-views
+    #
+    # This tells Rails to serve error pages from the Rails app itself
+    # (i.e. the routes we just set up),
+    # rather than using static error pages in public/.
+    # Further , I was curios how the default excpetions are directed to the
+    # static 404 page. You can see it  here /gems/actionpack-4.2.1/lib/action_dispatch/middleware/public_exceptions.rb
+    config.exceptions_app = self.routes
   end
 end
