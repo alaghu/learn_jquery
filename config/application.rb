@@ -36,6 +36,8 @@ module LearnJquery
     # This tells Rails to serve error pages from the Rails app itself
     # (i.e. the routes we just set up),
     # rather than using static error pages in public/.
+    # Further , I was curios how the default excpetions are directed to the
+    # static 404 page. You can see it  here /gems/actionpack-4.2.1/lib/action_dispatch/middleware/public_exceptions.rb
     config.exceptions_app = self.routes
   end
 end

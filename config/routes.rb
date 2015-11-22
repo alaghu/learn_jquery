@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'routing_errors/page_not_found'
-
-  get 'routing_errors/internal_server_error'
-
   # Root
   root 'home#index'
 
@@ -17,7 +13,6 @@ Rails.application.routes.draw do
   # param3 as: makes it named routes
   #
   # 3. Always - rake routes.
-
 
 
   # Books related routing
@@ -35,4 +30,8 @@ Rails.application.routes.draw do
   # Homes related routes
   resources :home
 
+  # Error condition
+  # Implemented as detailed https://mattbrictson.com/dynamic-rails-error-pages
+  get '/404', to: 'routing_errors#page_not_found'
+  get '/500', to: 'routing_errors#internal_server_error'
 end
