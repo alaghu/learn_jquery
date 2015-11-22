@@ -35,5 +35,4 @@ describe 'Error pages ' do
 
     expect(page).to have_content 'My 500!'
   end
-
 end
