@@ -16,7 +16,8 @@ body {
 //The banner
 .banner {
   // dimensions
-  min-width  : 560px;
+  // To fix issue#1. Made min-width 900px. Works in mac chrome
+  min-width  : 900px;
   height     : 200px;
 
   // For horizontally centering it
@@ -33,8 +34,8 @@ body {
 
 // Vertical align http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
 // paragraph inside banner
-// This is the "space" css selector indicating "ancestor descendent" 
-// ie - any p as a descendet of banner
+// This is the "space" css selector indicating "ancestor decedent"
+// ie - any p as a descendant of banner
 .banner p {
   position          : relative;
   top               : 50%;
@@ -43,7 +44,7 @@ body {
   margin            : 0;
   -webkit-transform : translateY(-50%);
   -ms-transform     : translateY(-50%);
-  transform         : translateY(-50%);
+  transform         : translateY(-50%);;
   }
 
 //The list table
