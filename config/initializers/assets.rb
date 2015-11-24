@@ -28,4 +28,6 @@ Rails.application.config.assets.precompile += %w(
   routing_errors_page_not_found.js
   routing_errors_internal_server_error.css
   routing_errors_internal_server_error.js
+  routing_errors_unable_to_process.css
+  routing_errors_unable_to_process.js
 )
