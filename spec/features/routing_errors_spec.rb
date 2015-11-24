@@ -36,4 +36,9 @@ describe 'Error pages ' do
     expect(page).to have_content 'My 500!'
   end
 
+  it 'should display my 422 page' do
+    visit '/422'
+
+    expect(page).to have_content 'My 422!'
+  end
 end

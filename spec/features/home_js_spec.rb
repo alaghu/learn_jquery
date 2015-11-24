@@ -3,7 +3,6 @@ require 'rails_helper'
 # Due to issue#14 (https://github.com/alaghu/learn_jquery/issues/14)
 # refactored all the js related cases to a separate file.
 RSpec.describe 'Home page' do
-
   it 'should not have JavaScript errors', js: true do
     visit(root_path)
     expect(page).to_not have_errors

@@ -7,4 +7,8 @@ class RoutingErrorsController < ApplicationController
   def internal_server_error
     render(status: 500)
   end
+
+  def unable_to_process
+    render(status: 422)
+  end
 end
