@@ -34,4 +34,5 @@ Rails.application.routes.draw do
   # Implemented as detailed https://mattbrictson.com/dynamic-rails-error-pages
   get '/404', to: 'routing_errors#page_not_found'
   get '/500', to: 'routing_errors#internal_server_error'
+  get '/422', to: 'routing_errors#unable_to_process'
 end
