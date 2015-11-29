@@ -1,26 +1,8 @@
 require 'rails_helper'
 
-# Specs in this file have access to a helper object that includes
-# the ApplicationHelper. For example:
-#
-# describe ApplicationHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
-# RSpec.describe ApplicationHelper, type: :helper do
-#   pending "add some examples to (or delete) #{__FILE__}"
-# end
-
 describe ApplicationHelper, type: :helper do
-  describe 'Concatenate Controller and Action Name' do
-    it 'should give home_index' do
-
-      expect(helper.concatenate_controller_action('home', 'index')).to eql('home_index')
-    end
-
+  it 'Concatenate with an underscore' do
+    method_call = helper.concatenate_controller_action('Controller', 'Action')
+    expect(method_call).to eq('Controller_Action')
   end
-
 end
