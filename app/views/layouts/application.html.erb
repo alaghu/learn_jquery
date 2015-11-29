@@ -18,12 +18,12 @@
 			      href="<%= image_path("Favicon/apple-touch-icon-#{size_squared}.png") %>"/>
 	<% end %>
 
-	<!--Other Browser Related Favicons-->
+	<!--Browser Related Favicons-->
 	<% other_icon_sizes_array = [16, 32, 96, 128, 196] %>
 	<% other_icon_sizes_array.each do |size| %>
 			<% size_squared = "#{size}x#{size}" %>
 			<link rel="icon" type="image/png" sizes="<%= size_squared %>"
-			      href="<%= image_path("Favicon/favicon-#{size_squared}") %>"/>
+			      href="<%= image_path("Favicon/favicon-#{size_squared}.png") %>"/>
 	<% end %>
 
 	<!--Microsoft Related Favicons-->
