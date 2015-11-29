@@ -17,3 +17,15 @@ AllCops:
       - 'db/**/*'
       - 'test/*'
 
+
+# After I received the following, I checked the behaviour of rubymine's
+#autoindentation, which was aligning the parameters. Also, this was
+#conflicting with alignment rul with rubocop as well. Thus, disabling this check.
+#
+# app/helpers/application_helper.rb:21:11: C: Indent the first parameter
+# one step more than the start of the previous line.
+#          image_path("Favicon/apple-touch-icon-#{size_squared}.png"),
+
+Style/FirstParameterIndentation:
+#  Description: 'Checks the indentation of the first parameter in a method call.'
+  Enabled: false
