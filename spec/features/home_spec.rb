@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Home page' do
-  it 'should have content from each line' do
+  it 'should have content from each line', js: true do
     header = 'Me Learning JQuery'
     line_1 = 'Opal'
     line_2 = 'A selection of books!'

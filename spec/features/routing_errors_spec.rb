@@ -24,15 +24,21 @@ describe 'Error pages ' do
     Rails.application.config.consider_all_requests_local = true
   end
 
-  it 'should display my 404 page' do
+  it 'should display my 404 page', js: true do
     visit '/404'
 
     expect(page).to have_content 'My 404'
   end
 
-  it 'should display my 500 page' do
+  it 'should display my 500 page', js: true do
     visit '/500'
 
     expect(page).to have_content 'My 500!'
+  end
+
+  it 'should display my 422 page', js: true do
+    visit '/422'
+
+    expect(page).to have_content 'My 422!'
   end
 end
