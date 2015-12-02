@@ -37,12 +37,9 @@ group :development, :test do
   # like click , visit, etc. Easy to understand actions as users would navidate.
   gem 'capybara', '2.5.0'
 
-  # Capybara can invoke the app through several dirvers. In our case we will
-  # use webkit, which is the engine behind chrome and safari. This will call
-  # the engine without opening a browser(headless).
-  # gem 'capybara-webkit', '1.7.1'
-
-  gem 'poltergeist'
+  # Poltergeist replaces webkit as the javascript driver for Capybara
+  # See /spec/rails_helper.rb for its reference.
+  gem 'poltergeist', '1.8.1'
 
   # a better
   gem 'pry-rails', '0.3.2'
