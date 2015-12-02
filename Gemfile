@@ -43,6 +43,12 @@ group :development, :test do
 
   # a better
   gem 'pry-rails', '0.3.2'
+
+  # Code coverage by codeclimate
+  gem "codeclimate-test-reporter", require: nil
+
+  # https://coveralls.io/github/alaghu/learn_jquery
+  gem 'coveralls', '0.8.3', require: false
 end
 
 # Test and maintenance related
@@ -53,9 +59,6 @@ gem 'sass-rails', '5.0.3'
 
 # Bootstrap css gemed
 gem 'bootstrap-sass', '3.3.5.1'
-
-# https://coveralls.io/github/alaghu/learn_jquery
-gem 'coveralls', '0.8.3', require: false
 
 # Javascript related
 # ------------------

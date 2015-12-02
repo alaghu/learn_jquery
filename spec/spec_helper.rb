@@ -1,7 +1,9 @@
+# I am bringing back codeclimate as well, even if it is going o check only
+# for master.
 
-
-# I have added  Coveralls code coverage only as code climate looks at only
-# master branch
+# Refer to https://codeclimate.com/repos/563b63326956804cc10010ae/coverage_setup
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 # https://coveralls.io/github/alaghu/learn_jquery
 require 'coveralls'
