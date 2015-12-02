@@ -8,7 +8,7 @@ describe 'Home page' do
   end
 end
 
-# Intro
+# # Intro
 describe 'book intro page' do
   it 'should not have JavaScript errors', js: true do
     visit '/'
@@ -17,8 +17,8 @@ describe 'book intro page' do
     expect(page).to_not have_errors
   end
 end
-
-# Selector
+#
+# # Selector
 describe 'Book selector page' do
   it 'should not have JavaScript errors', js: true do
     visit '/'

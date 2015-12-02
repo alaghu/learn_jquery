@@ -1,0 +1,138 @@
+Anand:learn_jquery/ (webkit_tests_have_error_failing*) $ rspec -f d                                                                                 [22:35:47]
+[Coveralls] Set up the SimpleCov formatter.
+[Coveralls] Using SimpleCov's default settings.
+
+Home page
+Finished "EnableLogging()" with response "Success()"
+Wrote response true ""
+Received "SetTimeout(-1)"
+Started "SetTimeout(-1)"
+Finished "SetTimeout(-1)" with response "Success()"
+Wrote response true ""
+Received "Visit(http://127.0.0.1:59495/)"
+Started "Visit(http://127.0.0.1:59495/)"
+Load started
+"Visit(http://127.0.0.1:59495/)" started page load
+Started request to "http://127.0.0.1:59495/"
+Finished "Visit(http://127.0.0.1:59495/)" with response "Success()"
+Started request to "http://127.0.0.1:59495/assets/application.css"
+Started request to "http://127.0.0.1:59495/assets/home_index.css"
+Started request to "http://127.0.0.1:59495/assets/application.js"
+Started request to "http://127.0.0.1:59495/assets/home_index.js"
+Received 200 from "http://127.0.0.1:59495/"
+Received 200 from "http://127.0.0.1:59495/assets/application.css"
+Received 200 from "http://127.0.0.1:59495/assets/home_index.css"
+Received 200 from "http://127.0.0.1:59495/assets/home_index.js"
+Received 200 from "http://127.0.0.1:59495/assets/application.js"
+Page finished with true
+Load finished
+Page load from command finished
+Wrote response true ""
+Received "ConsoleMessages()"
+Started "ConsoleMessages()"
+Finished "ConsoleMessages()" with response "Success([])"
+Wrote response true "[]"
+Received "Reset()"
+Started "Reset()"
+Finished "Reset()" with response "Success()"
+Wrote response true ""
+Received "EnableLogging()"
+Started "EnableLogging()"
+Finished "EnableLogging()" with response "Success()"
+Wrote response true ""
+Received "SetTimeout(-1)"
+Started "SetTimeout(-1)"
+Finished "SetTimeout(-1)" with response "Success()"
+Wrote response true ""
+Received "FindXpath(/html/body/*)"
+Started "FindXpath(/html/body/*)"
+Finished "FindXpath(/html/body/*)" with response "Success()"
+Wrote response true ""
+  should not have JavaScript errors
+
+book intro page
+Received "Visit(http://127.0.0.1:59495/)"
+Started "Visit(http://127.0.0.1:59495/)"
+Load started
+"Visit(http://127.0.0.1:59495/)" started page load
+Started request to "http://127.0.0.1:59495/"
+Finished "Visit(http://127.0.0.1:59495/)" with response "Success()"
+Received 304 from "http://127.0.0.1:59495/"
+Started request to "http://127.0.0.1:59495/assets/application.css"
+Started request to "http://127.0.0.1:59495/assets/home_index.css"
+Started request to "http://127.0.0.1:59495/assets/application.js"
+Started request to "http://127.0.0.1:59495/assets/home_index.js"
+Received 304 from "http://127.0.0.1:59495/assets/application.js"
+Received 304 from "http://127.0.0.1:59495/assets/home_index.js"
+Received 304 from "http://127.0.0.1:59495/assets/application.css"
+Received 304 from "http://127.0.0.1:59495/assets/home_index.css"
+Page finished with true
+Load finished
+Page load from command finished
+Wrote response true ""
+Received "FindXpath(.//a[./@href][(((./@id = 'Can you book my intro?' or normalize-space(string(.)) = 'Can you book my intro?') or ./@title = 'Can you book my intro?') or .//img[./@alt = 'Can you book my intro?'])] | .//input[./@type = 'submit' or ./@type = 'reset' or ./@type = 'image' or ./@type = 'button'][((./@id = 'Can you book my intro?' or ./@value = 'Can you book my intro?') or ./@title = 'Can you book my intro?')] | .//input[./@type = 'image'][./@alt = 'Can you book my intro?'] | .//button[(((./@id = 'Can you book my intro?' or ./@value = 'Can you book my intro?') or normalize-space(string(.)) = 'Can you book my intro?') or ./@title = 'Can you book my intro?')] | .//input[./@type = 'image'][./@alt = 'Can you book my intro?'])"
+Started "FindXpath(.//a[./@href][(((./@id = 'Can you book my intro?' or normalize-space(string(.)) = 'Can you book my intro?') or ./@title = 'Can you book my intro?') or .//img[./@alt = 'Can you book my intro?'])] | .//input[./@type = 'submit' or ./@type = 'reset' or ./@type = 'image' or ./@type = 'button'][((./@id = 'Can you book my intro?' or ./@value = 'Can you book my intro?') or ./@title = 'Can you book my intro?')] | .//input[./@type = 'image'][./@alt = 'Can you book my intro?'] | .//button[(((./@id = 'Can you book my intro?' or ./@value = 'Can you book my intro?') or normalize-space(string(.)) = 'Can you book my intro?') or ./@title = 'Can you book my intro?')] | .//input[./@type = 'image'][./@alt = 'Can you book my intro?'])"
+Finished "FindXpath(.//a[./@href][(((./@id = 'Can you book my intro?' or normalize-space(string(.)) = 'Can you book my intro?') or ./@title = 'Can you book my intro?') or .//img[./@alt = 'Can you book my intro?'])] | .//input[./@type = 'submit' or ./@type = 'reset' or ./@type = 'image' or ./@type = 'button'][((./@id = 'Can you book my intro?' or ./@value = 'Can you book my intro?') or ./@title = 'Can you book my intro?')] | .//input[./@type = 'image'][./@alt = 'Can you book my intro?'] | .//button[(((./@id = 'Can you book my intro?' or ./@value = 'Can you book my intro?') or normalize-space(string(.)) = 'Can you book my intro?') or ./@title = 'Can you book my intro?')] | .//input[./@type = 'image'][./@alt = 'Can you book my intro?'])" with response "Success(1)"
+Wrote response true "1"
+Received "Node.visible"
+Started "Node.visible"
+Finished "Node.visible" with response "Success(true)"
+Wrote response true "true"
+Received "Node.tagName"
+Started "Node.tagName"
+Finished "Node.tagName" with response "Success(a)"
+Wrote response true "a"
+Received "Node.leftClick"
+Started "Node.leftClick"
+Started request to "http://127.0.0.1:59495/book/intro"
+Finished "Node.leftClick" with response "Success()"
+Wrote response true ""
+Received "ConsoleMessages()"
+Started "ConsoleMessages()"
+Finished "ConsoleMessages()" with response "Success([])"
+Wrote response true "[]"
+Received "Reset()"
+Started "Reset()"
+Aborting request to "http://127.0.0.1:59495/book/intro"
+Received 0 from "http://127.0.0.1:59495/book/intro"
+Finished "Reset()" with response "Success()"
+Wrote response true ""
+Load started
+Started request to "http://127.0.0.1:59495/book/intro"
+Started request to "http://127.0.0.1:59495/book/intro"
+Received 0 from "http://127.0.0.1:59495/book/intro"
+Received "EnableLogging()"
+Started "EnableLogging()"
+Finished "EnableLogging()" with response "Success()"
+Wrote response true ""
+Received "SetTimeout(-1)"
+Started "SetTimeout(-1)"
+Finished "SetTimeout(-1)" with response "Success()"
+Wrote response true ""
+Received "FindXpath(/html/body/*)"
+Started "FindXpath(/html/body/*)"
+Finished "FindXpath(/html/body/*)" with response "Success()"
+Wrote response true ""
+  should not have JavaScript errors
+
+Book selector page
+Received "Visit(http://127.0.0.1:59495/)"
+Started "Visit(http://127.0.0.1:59495/)"
+Started request to "http://127.0.0.1:59495/"
+Finished "Visit(http://127.0.0.1:59495/)" with response "Success()"
+Wrote response true ""
+Received "FindXpath(.//a[./@href][(((./@id = 'A selection of books!' or normalize-space(string(.)) = 'A selection of books!') or ./@title = 'A selection of books!') or .//img[./@alt = 'A selection of books!'])] | .//input[./@type = 'submit' or ./@type = 'reset' or ./@type = 'image' or ./@type = 'button'][((./@id = 'A selection of books!' or ./@value = 'A selection of books!') or ./@title = 'A selection of books!')] | .//input[./@type = 'image'][./@alt = 'A selection of books!'] | .//button[(((./@id = 'A selection of books!' or ./@value = 'A selection of books!') or normalize-space(string(.)) = 'A selection of books!') or ./@title = 'A selection of books!')] | .//input[./@type = 'image'][./@alt = 'A selection of books!'])"
+"TimeoutCommand" waiting for load to finish
+Received 304 from "http://127.0.0.1:59495/"
+Started request to "http://127.0.0.1:59495/assets/application.css"
+Started request to "http://127.0.0.1:59495/assets/home_index.css"
+Started request to "http://127.0.0.1:59495/assets/application.js"
+Started request to "http://127.0.0.1:59495/assets/home_index.js"
+Received 304 from "http://127.0.0.1:59495/assets/home_index.css"
+Received 304 from "http://127.0.0.1:59495/assets/application.css"
+Received 304 from "http://127.0.0.1:59495/assets/home_index.js"
+Received 304 from "http://127.0.0.1:59495/assets/application.js"
+Page finished with true
+^C
+RSpec is shutting down and will print the summary report... Interrupt again to force quit.
+^C%                                                                                                                                                            Anand:learn_jquery/ (webkit_tests_have_error_failing*) $
