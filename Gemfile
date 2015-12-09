@@ -45,7 +45,7 @@ group :development, :test do
   gem 'pry-rails', '0.3.2'
 
   # Code coverage by codeclimate
-  gem "codeclimate-test-reporter", require: nil
+  gem 'codeclimate-test-reporter', '0.4.8', require: nil
 
   # https://www.pullreview.com/settings/repositories/54091/
   # how_to_enable_coverage

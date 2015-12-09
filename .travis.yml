@@ -14,7 +14,8 @@ before_install:
   - mysql -e "create database IF NOT EXISTS test;" -uroot
 
 # uncomment this line if your project needs to run something other than `rake`:
-script: PULLREVIEW_REPO_TOKEN=7c485156e91f6e5bfeffee47ddbf15a2 bundle exec rspec
+
+script: PULLREVIEW_REPO_TOKEN=d66c26c5dfdf1c28daea63f71eda410e bundle exec rspec
 
 
 # http://docs.travis-ci.com/user/code-climate/
