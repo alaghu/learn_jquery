@@ -109,15 +109,12 @@ GEM
       multi_json (~> 1.0)
       websocket-driver (>= 0.2.0)
     powerpack (0.1.1)
-<<<<<<< HEAD
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
-=======
->>>>>>> 6cd406cf7304230f15e8537476de96e94087e005
     pullreview-coverage (0.0.5)
       certifi
       simplecov (>= 0.7.1, < 1.0.0)
