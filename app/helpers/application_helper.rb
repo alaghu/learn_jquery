@@ -10,41 +10,18 @@ module ApplicationHelper
   def apple_icons
     apple_icon_sizes_array = [57, 60, 72, 76, 114, 120, 144, 152]
 
-    # derived from SO#20327068 as a method returns only one value
-    # An empty String
-    html = ''
-    apple_icon_sizes_array.each do |size|
-      size_squared = "#{size}x#{size}"
-
-      # Concatenate to string
-      html << favicon_link_tag(
-          image_path("Favicon/apple-touch-icon-#{size_squared}.png"),
-          rel: 'apple-touch-icon-precomposed',
-          sizes: "#{size_squared}")
-    end
-
-    # return html safe string
-    html.html_safe
+    icon_tags('apple-touch-icon-precomposed',
+              'apple-touch-icon',
+              apple_icon_sizes_array)
   end
 
   # Returns link tags for browsers
   def browser_favicons
     other_icon_sizes_array = [16, 32, 96, 128, 196]
 
-    # An empty String
-    html = ''
-    other_icon_sizes_array.each do |size|
-      size_squared = "#{size}x#{size}"
-
-      # Concatenate to string
-      html << favicon_link_tag(
-          image_path("Favicon/favicon-#{size_squared}.png"),
-          rel: 'icon',
-          sizes: "#{size_squared}")
-    end
-
-    # return html safe string
-    html.html_safe
+    icon_tags('icon',
+              'favicon',
+              other_icon_sizes_array)
   end
 
   # Returns Microsft related icons
@@ -65,6 +42,26 @@ module ApplicationHelper
       html << tag('meta',
                   name: "msapplication-square#{size_squared}logo",
                   content: image_path("Favicon/mstile-#{size_squared}.png"))
+    end
+
+    # return html safe string
+    html.html_safe
+  end
+
+  # A generic method for favicons after refactoring
+  def icon_tags(type_of_rel, file_prefix, size_array)
+    # # derived from SO#20327068 as a method returns only one value
+    # # An empty String
+    html = ''
+
+    size_array.each do |size|
+      size_squared = "#{size}x#{size}"
+
+      # Concatenate to string
+      html << favicon_link_tag(
+          image_path("Favicon/#{file_prefix}-#{size_squared}.png"),
+          rel: type_of_rel,
+          sizes: "#{size_squared}")
     end
 
     # return html safe string
