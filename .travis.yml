@@ -16,7 +16,7 @@ before_install:
 # uncomment this line if your project needs to run something other than `rake`:
 
 #script: PULLREVIEW_REPO_TOKEN=d66c26c5dfdf1c28daea63f71eda410e bundle exec rspec
-script
+script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate test
 
 # http://docs.travis-ci.com/user/code-climate/
