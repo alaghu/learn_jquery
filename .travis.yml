@@ -20,7 +20,7 @@ script:
 
   - PULLREVIEW_REPO_TOKEN=d66c26c5dfdf1c28daea63f71eda410e bundle exec rspec
 
-  -CODECLIMATE_REPO_TOKEN=bd1ac43f2e67a4c5e8277958cc5a21c34bcc4482cdf2c77166e8a674fa83349e bundle exec rake
+  - CODECLIMATE_REPO_TOKEN=bd1ac43f2e67a4c5e8277958cc5a21c34bcc4482cdf2c77166e8a674fa83349e bundle exec rspec
 
 
 
