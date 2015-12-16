@@ -13,16 +13,15 @@ before_script:
 before_install:
   - mysql -e "create database IF NOT EXISTS test;" -uroot
 
-# uncomment this line if your project needs to run something other than `rake`:
-
 script:
+  # Since 14 Dec, travis needed this explicit step
   - RAILS_ENV=test bundle exec rake --trace db:migrate test
 
+  # works for pull review.
   - PULLREVIEW_REPO_TOKEN=d66c26c5dfdf1c28daea63f71eda410e bundle exec rspec
 
+  # works for codeclimate, only for master though.
   - CODECLIMATE_REPO_TOKEN=bd1ac43f2e67a4c5e8277958cc5a21c34bcc4482cdf2c77166e8a674fa83349e bundle exec rspec
-
-
 
 # http://docs.travis-ci.com/user/code-climate/
 # and https://codeclimate.com/repos/563b63326956804cc10010ae/coverage_setup
