@@ -18,4 +18,27 @@ describe ApplicationHelper, type: :helper do
     expect(method_call).to start_with(starting_tag)
     expect(method_call).to include(*sizes)
   end
+
+  it 'should return favicon tags for other browsers' do
+    starting_tag = '<link rel="icon" type="image/x-icon"'\
+      ' href="/assets/Favicon/favicon-16x16.png" sizes="16x16"'
+
+    sizes = %w(16x16 32x32 96x96 128x128 196x196)
+
+    method_call = helper.browser_favicons
+
+    expect(method_call).to start_with(starting_tag)
+    expect(method_call).to include(*sizes)
+  end
+
+  it 'should return microsoft icon tags ' do
+    starting_tag = '<meta name="application-name" content='
+
+    sizes = %w(70x70 144x144 150x150 310x310)
+
+    method_call = helper.microsoft_icons
+
+    expect(method_call).to start_with(starting_tag)
+    expect(method_call).to include(*sizes)
+  end
 end
